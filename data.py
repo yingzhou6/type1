@@ -9,9 +9,9 @@ import dash_bootstrap_components as dbc
 from dash.dependencies import Input, Output, State
 import plotly.express as px
 
-sdg = pd.read_csv('https://www.dropbox.com/h?preview=sdg_12_tickers.csv')
-esg = pd.read_csv('https://www.dropbox.com/h?preview=esg_12_tickers.csv')
-sent = pd.read_csv('https://www.dropbox.com/h?preview=sentiment_12_tickers.csv')
+sdg = pd.read_csv('https://www.dropbox.com/s/fsxgf885s1f5bro/sdg_12_tickers.csv?dl=1',on_bad_lines='skip')
+esg = pd.read_csv('https://www.dropbox.com/s/7h3k7v6z67q80df/esg_12_tickers.csv?dl=1',on_bad_lines='skip')
+sent = pd.read_csv('https://www.dropbox.com/s/hv3p1d3xt4l9yvc/sentiment_12_tickers.csv?dl=1',on_bad_lines='skip')
 
 ticker = sdg['Ticker'].unique()
 ticker1 = esg['Ticker'].unique()
